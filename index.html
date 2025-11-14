@@ -829,6 +829,9 @@
                             <label for="message">Message</label>
                             <textarea id="message" class="form-control" required></textarea>
                         </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdaxgwsAAAAANVGhyBNSHPgr-tltNtgGXpfDiok"></div>
+                        </div>
                         <button type="submit" class="submit-btn" id="submitBtn">
                             Send Message
                         </button>
@@ -889,7 +892,7 @@
                     from_name: document.getElementById('name').value,
                     from_email: document.getElementById('email').value,
                     message: document.getElementById('message').value,
-                    to_name: 'Alex Morgan',
+                    to_name: 'Nitheesh Ganta',
                     reply_to: document.getElementById('email').value
                 };
 
@@ -992,6 +995,8 @@
             canvas.height = window.innerHeight;
         });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
+
 
